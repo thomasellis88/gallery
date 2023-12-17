@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+.thumbnails{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start, center;
+    border: 2px solid rgb(128, 128, 128);
+    background-color: rgb(117, 116, 116);
+    cursor: pointer;
+}
+
+.thumbnails img{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+#displayImage{
+    width: 100%;
+    max-height: fit-content;
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    color: silver;
+    margin-bottom: 0;
+}
+
+#brightness img:hover{
+    opacity: .5;
+    text-decoration: underline;
+}
+
+button#Next {
+    position: absolute;
+    top: 50vh;
+    right: 5vw;
+}
+
+button {
+    border: 6px solid rgba(255, 255, 255, 0.679);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.135);
+    color: rgba(255, 255, 255, 0.679);
+    padding: 6px 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+button#previous {
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+}
+
+button {
+    border: 6px solid (255, 255, 255, 0.679);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.135);
+    color: rgba(255, 255, 255, 0.679);
+    padding: 6px 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    #brightness {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
